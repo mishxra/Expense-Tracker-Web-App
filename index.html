@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Tracker Web App</title>
+</head>
+<body>
+    <h1>Expense Tracker Web App</h1>
+    <div class="inputsection">
+        <label for="Category-Selection">Category:</label>
+        <select id="Category-Selection">
+            <option value="Food">Food</option>
+            <option value="Transport">Transport</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Utilities">Utilities</option>
+            <option value="Other">Other</option>     
+        </select>
+        <label for="Amount-Input">Amount:</label>
+        <input type="number" id="Amount-Input" placeholder="Enter amount">
+        <label for="Date-Input">Date:</label>
+        <input type="date" id="Date-Input">
+        <button id="Add-Expense-Button">Add Expense</button>                                                                                       
+    </div>
+    <div class="expenses-list">
+        <h2>Expenses List</h2>
+        <table id="Expenses-Table">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="Expenses-Table-Body">
+                <!-- Expenses will be dynamically added here -->
+
+            </tbody>
+            <tfoot>
+                <td>Total :</td>
+                <td id="Total-Amount"></td>
+                <td></td>
+                <td></td>
+            </tfoot>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
